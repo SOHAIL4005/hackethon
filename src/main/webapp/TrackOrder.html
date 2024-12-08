@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Your Order</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+    }
+    .order-details {
+      margin-bottom: 2rem;
+    }
+    .order-details h3 {
+      margin: 0;
+      color: #333;
+    }
+    .order-details p {
+      margin: 0.5rem 0;
+      color: #555;
+    }
+    .progress-bar {
+      margin: 2rem 0;
+    }
+    .progress-bar .steps {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    .progress-bar .steps span {
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
+      flex: 1;
+    }
+    .progress-bar .line {
+      position: relative;
+      height: 4px;
+      background: #ddd;
+      border-radius: 2px;
+    }
+    .progress-bar .line .indicator {
+      position: absolute;
+      height: 4px;
+      background: #4CAF50;
+      border-radius: 2px;
+      transition: width 0.3s;
+    }
+    .progress-bar .dots {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin-top: -10px;
+    }
+    .progress-bar .dots .dot {
+      width: 20px;
+      height: 20px;
+      background: #ddd;
+      border-radius: 50%;
+      position: relative;
+    }
+    .progress-bar .dots .dot.active {
+      background: #4CAF50;
+    }
+    .progress-bar .dots .dot.active::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      background: white;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .delivery-info {
+      margin-top: 2rem;
+    }
+    .delivery-info h3 {
+      margin: 0;
+      color: #333;
+    }
+    .delivery-info p {
+      margin: 0.5rem 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Track Your Order</h1>
+    <div class="order-details">
+      <h3>Order ID: 123456789</h3>
+      <p>Product Name:Organic Wheat</p>
+      <p>Expected Delivery: December 12, 2024</p>
+    </div>
+    <div class="progress-bar">
+      <div class="steps">
+        <span>Order Placed</span>
+        <span>Shipped</span>
+        <span>Out for Delivery</span>
+        <span>Delivered</span>
+      </div>
+      <div class="line">
+        <div class="indicator" style="width: 75%;"></div>
+      </div>
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot active"></div>
+        <div class="dot active"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    <div class="delivery-info">
+      <h3>Delivery Address:</h3>
+      <p>sohail</p>
+      <p>123 Main Street, Apartment 4B</p>
+      <p>INDIA, NY 10001</p>
+      <h3>Contact Info:</h3>
+      <p>Phone:938127698</p>
+      <p>Email: sohail.doe@gmail.com</p>
+    </div>
+  </div>
+</body>
+</html>
